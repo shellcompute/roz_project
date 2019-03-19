@@ -9,6 +9,14 @@ reports, and beautiful data-charts, which is mainly based on the famous ECharts.
 
 Everyone who may help us improving the project would be welcomed and encouraged.
 
+## How To Use
+
+for developers:
+
+1. Activate the virtualenv and run: ```python manage.py runserver```.
+2. The service would be running on http://127.0.0.1:5000/
+
+
 ## Framework
 
 | Unit | Component Selection |
