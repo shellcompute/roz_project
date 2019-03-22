@@ -6,7 +6,7 @@
         <h1>报表总览</h1>
     </div>
     <div>
-        <table class="table table-hover">
+        <table id="rpt_list" class="table table-hover">
             <thead>
             <tr class="text-center">
                 <th>报表类型</th>
@@ -16,25 +16,25 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr rpt_id="1">
                 <td>开发类</td>
                 <td>工作日报</td>
                 <td>开发团队每日工作内容汇总清单</td>
                 <td>当日完成任务数、当日修复Bug数</td>
             </tr>
-            <tr>
+            <tr rpt_id="2">
                 <td>开发类</td>
                 <td>工作周报</td>
                 <td>开发团队每周工作内容汇总清单</td>
                 <td>本周完成任务数、本周修复Bug数</td>
             </tr>
-            <tr>
+            <tr rpt_id="3">
                 <td>测试类</td>
                 <td>测试工作日报</td>
                 <td>测试团队每日工作内容汇总清单</td>
                 <td>当日完成测试用例数、当日新增Bug数</td>
             </tr>
-            <tr>
+            <tr rpt_id="4">
                 <td>测试类</td>
                 <td>测试工作周报</td>
                 <td>测试团队每周工作内容汇总清单</td>
@@ -49,5 +49,6 @@
 
 {% block scripts %}
 {{ super() }}
+<script type="text/javascript" src="{{ url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
 {% endblock %}
